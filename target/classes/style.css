@@ -1,0 +1,79 @@
+.root {
+    -fx-background-image: url("hangmanbg.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+.label {
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-font-weight: bolder;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+}
+.button:hover {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+#nextwordLabel:hover {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+.grid-pane {
+    -fx-padding: 10px;
+    -fx-hgap: 40px;
+    -fx-vgap: 40px;
+    -fx-pref-width: 60px;
+    -fx-pref-height: 60px;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+  
+}
+.stageGrid {
+    -fx-padding: 10px;
+    -fx-hgap: 20px;
+    -fx-vgap: 20px;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+  
+}
+#backgroundButton {
+    -fx-background-color: white;
+    -fx-background-radius: 20;
+    -fx-border-radius: 20;
+    -fx-border-color: black;
+    -fx-border-width: 2.5px;
+}
+#textText {
+    -fx-wrap-text: true;
+    -fx-padding: 5px 10px;
+    
+    -fx-font-weight: bold;
+    -fx-text-fill: red;
+}
+
+#diamondText {
+    -fx-font-size: 20px;
+    -fx-font-weight: bolder;
+    -fx-font-family: Arial, Helvetica, sans-serif;
+    -fx-background-color: antiquewhite;
+}
+#diamondText:hover{
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+#timerLabel {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(0, 0, 0);
+}

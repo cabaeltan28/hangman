@@ -1,0 +1,4 @@
+Lion|A an anger animal
+Tiger|A cute animal
+Elephant|A an amazaing animal
+
