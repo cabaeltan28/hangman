@@ -211,7 +211,6 @@ public class GameController {
         if(model.isWin()){
             textText.setText("You win! Congratulations bro!");
              getRight++;
-           j++;
            attemp++;
            if(model.isWin()){
             if(timer != null){
@@ -222,7 +221,7 @@ public class GameController {
           disabled(false);
          diamondText.setText("💎 :"+(diamond+=20));
           attempPerWord=0;
-
+            j++;
         }
        
          this.streakLabel.setText("STREAK :"+getRight.toString());
@@ -323,9 +322,9 @@ private void disabled(boolean enabled) {
 
             if(timeLeft <= 0){
                 timer.stop();
-
+                tryagainButton.setDisable(false);
                 textText.setText("Time Out!");
-
+                attemp++;
                 wordLabel.setText(wordToGuess);
 
                 for(Node node : keyBoardGrid.getChildren()){
