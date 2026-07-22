@@ -1,4 +1,32 @@
-Lion|A an anger animal
-Tiger|A cute animal
-Elephant|A an amazaing animal
+Apple|A round, crisp fruit that is typically red, yellow, or green.
+Ball|A round object used in games and sports to throw, kick, or hit.
+Cat|A small, furry animal often kept as a pet that likes to chase mice.
+Dog| A loyal four-legged pet often called "man's best friend" that barks.
+Egg|A round object laid by birds and other animals that holds a developing embryo.
+Fish|An animal with gills and fins that lives and swims in water.
+Goat| A horned, hoofed animal known for eating grass and climbing well.
+Hat|A covering worn on the head for protection, warmth, or style.
+Ice|Water that has frozen and turned into a solid, hard state.
+Jam|A sweet spread made by cooking fruit with sugar.
+Kite|A light frame covered with material that flies in the wind at the end of a string.
+Lion|A large, powerful wild cat often called the "king of the jungle."
+Moon|The bright natural satellite that orbits the Earth and shines at night.
+Nest|A structure built by birds to hold their eggs and raise their young.
+Orange| A round, juicy citrus fruit with a bright orange-colored skin
+Pen|A long, thin tool used for writing with ink.
+Queen|A female ruler of a kingdom, or the wife of a king.
+Rabbit|A small animal with long ears, a fluffy tail, and strong back legs.
+Sun|The star at the center of our solar system that gives Earth light and heat.
+Tree|A tall plant with a thick wooden trunk, branches, and leaves.
+Umbrella|A folding device used to shield a person from rain or sunlight.
+Van|A motor vehicle used for transporting goods or people.
+Water|A clear liquid that falls as rain and forms rivers, lakes, and seas.
+X-ray|A type of invisible ray that can pass through solid objects to take pictures inside the body.
+Yellow|A bright color resembling the ripe flesh of a lemon or the sun.
+Zebra|An African wild horse-like animal with distinctive black-and-white stripes.
+Cloud|A visible mass of tiny water droplets or ice crystals floating in the sky.
+Ship|A large seafaring vessel used to travel across oceans and carry cargo or people.
+Star|A huge, glowing ball of hot gas in space that appears as a bright point of light at night.
+Book|A set of written or printed pages bound together inside protective covers.
+Compose
 

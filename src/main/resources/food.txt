@@ -1,3 +1,60 @@
-Adobo|
-Tocino|ayiii kaon
-Letchon|gege kini2
+Adventure|An exciting or unusual experience that often involves some risk.
+Butterfly|A flying insect with large, colorful wings that develops from a caterpillar.
+Chocolate|A delicious sweet food made from roasted and ground cacao seeds.
+Dinosaur|A type of prehistoric reptile that lived on Earth millions of years ago.
+Elephant|A very large grey animal with big ears, two long tusks, and a long trunk.
+Fireworks| Explosive devices that create bright lights and loud sounds when lit.
+Galaxy|A huge group of stars, gas, and dust held together by gravity in space.
+Hospital|A place where sick or injured people receive medical care and treatment.
+IInternet|A global computer network that connects people and information all over the world.
+Journey|The act of traveling from one particular place to another.
+Kangaroo|An Australian animal with powerful back legs that hops and carries its young in a pouch.
+Library|A quiet place where books, magazines, and other materials are kept for people to read or borrow.
+Mountain|A very high and steep landform that rises above the surrounding area.
+Notebook| A book with blank pages used for writing notes, ideas, or information.
+Octopus|A sea animal with a soft body and eight long arms covered in suction cups.
+Penguin|A black-and-white seabird that cannot fly but is an excellent swimmer.
+Question| A sentence used to ask for information, clarification, or an answer.
+Rainbow|A colorful arc that appears in the sky when sunlight shines through rain.
+Sandwich|A food item made of two pieces of bread with meat, cheese, or other filling between them.
+Telescope|A tool used to make faraway objects in space appear larger and clearer.
+Universe|verything that exists, including all the stars, planets, space, and time itself.
+Volcano|An opening in the Earth's crust through which hot lava, ash, and gases can erupt.
+Waterfall|A stream or river that flows over the edge of a cliff and falls downward.
+Xylophone|A musical instrument with wooden bars that produce different notes when struck with mallets.
+Yesterday|The day that came before today; the most recent past day.
+Zookeeper| A person whose job is to take care of, feed, and manage animals in a zoo.
+Dangerous|Likely to cause harm, injury, or damage to someone or something.
+Carnival| A lively traveling festival with rides, games, music, and colorful entertainment.
+Mysterious|Difficult or impossible to understand, explain, or figure out.
+Beautiful|Very pleasing to look at, hear, or experience; full of charm and attractAdventure|An exciting or unusual experience that often involves some risk.
+Butterfly|A flying insect with large, colorful wings that develops from a caterpillar.
+Chocolate|A delicious sweet food made from roasted and ground cacao seeds.
+Dinosaur|A type of prehistoric reptile that lived on Earth millions of years ago.
+Elephant|A very large grey animal with big ears, two long tusks, and a long trunk.
+Fireworks| Explosive devices that create bright lights and loud sounds when lit.
+Galaxy|A huge group of stars, gas, and dust held together by gravity in space.
+Hospital|A place where sick or injured people receive medical care and treatment.
+IInternet|A global computer network that connects people and information all over the world.
+Journey|The act of traveling from one particular place to another.
+Kangaroo|An Australian animal with powerful back legs that hops and carries its young in a pouch.
+Library|A quiet place where books, magazines, and other materials are kept for people to read or borrow.
+Mountain|A very high and steep landform that rises above the surrounding area.
+Notebook| A book with blank pages used for writing notes, ideas, or information.
+Octopus|A sea animal with a soft body and eight long arms covered in suction cups.
+Penguin|A black-and-white seabird that cannot fly but is an excellent swimmer.
+Question| A sentence used to ask for information, clarification, or an answer.
+Rainbow|A colorful arc that appears in the sky when sunlight shines through rain.
+Sandwich|A food item made of two pieces of bread with meat, cheese, or other filling between them.
+Telescope|A tool used to make faraway objects in space appear larger and clearer.
+Universe|verything that exists, including all the stars, planets, space, and time itself.
+Volcano|An opening in the Earth's crust through which hot lava, ash, and gases can erupt.
+Waterfall|A stream or river that flows over the edge of a cliff and falls downward.
+Xylophone|A musical instrument with wooden bars that produce different notes when struck with mallets.
+Yesterday|The day that came before today; the most recent past day.
+Zookeeper| A person whose job is to take care of, feed, and manage animals in a zoo.
+Dangerous|Likely to cause harm, injury, or damage to someone or something.
+Carnival| A lively traveling festival with rides, games, music, and colorful entertainment.
+Mysterious|Difficult or impossible to understand, explain, or figure out.
+Beautiful|Very pleasing to look at, hear, or experience; full of charm and attractiveness.
+veness.

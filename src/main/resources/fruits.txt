@@ -1,4 +1,30 @@
-Apple|pine apple
-Banana|pine banan
-Cherry|pine cherry
-
+Labyrinth|A complicated network of paths and passages designed to be difficult to find your way through.
+Metamorphosis|A complete and dramatic change in form, appearance, or character.
+Entrepreneur| A person who organizes and operates a business, taking on financial risks to do so.
+Conscientious| Wishing to do one's work or duty well and thoroughly, with careful attention.
+Rhythm|A strong, regular, repeated pattern of movement or sound.
+Chrysanthemum|A type of flower with brightly colored petals that bloom in late summer and autumn.
+Psychology|The scientific study of the human mind and how people behave and think.
+Questionnaire|A set of printed or written questions used to gather information from people.
+Juxtaposition|The act of placing two things close together to show a striking contrast or comparison.
+Kaleidoscope|A tube-shaped toy containing mirrors and colored pieces that create changing patterns.
+Bureaucracy|A system of government or organization with many complicated rules and procedures.
+Xylophone|A musical instrument with wooden bars of different lengths that produce notes when struck.
+Zoologist|A scientist who studies animals and their behavior, structure, and classification.
+Yachtsman|A person who owns or sails a yacht, especially as a sport or hobby.
+Whimsical|Playfully quaint, fanciful, or amusing in a strange and wonderful way
+Vocabulary|The body of words used in a particular language or known by a specific person.
+Unpredictable|Not able to be foreseen or known beforehand; likely to change suddenly.
+Thunderstorm|A storm with heavy rain, strong winds, lightning, and loud thunder.
+Sphinx| An ancient stone statue with a lion's body and a human head, found in Egypt.
+Rhinoceros|A large, heavy animal with thick skin and one or two horns on its snout.
+Photosynthesis|The process by which green plants use sunlight to make their own food from carbon dioxide and water.
+Octahedron|A three-dimensional shape with eight equal triangular faces.
+Nebulous|Unclear, vague, or cloud-like; not having a definite shape or form.
+Magnificent|Impressively beautiful, elaborate, or excellent; very grand and splendid.
+Hyperbole|A figure of speech that uses extreme exaggeration to make a point or show emphasis.
+Eccentric|Unconventional and slightly strange; behaving in a way that is unusual or odd.
+Connoisseur|An expert judge in matters of taste, such as fine food, art, or wine.
+Acquintance|A person you know slightly, but who is not a close friend.
+Pneumonia|A serious illness where the lungs become inflamed and filled with fluid.
+Surveillance|The careful observation of a person or place, especially by authorities.
