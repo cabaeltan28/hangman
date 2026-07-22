@@ -149,7 +149,7 @@ public class GameController {
         switch (category) {
             case "ANIMAL":
             Animal newAnimal = animalRepository.getRandomWord();
-            hehe.setText(newAnimal.getDefinition());
+           
             startNewGame(newAnimal.getWord());
                 break;
             case "PLACE":
