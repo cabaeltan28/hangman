@@ -240,7 +240,7 @@ public class GameController {
     }
 
     private void refreshUI() {
-        imageView.setImage(new Image(getClass().getResource("/pictures/%d-hangman.png".formatted(model.getCurrentWrongs())).toExternalForm()));
+        imageView.setImage(new Image(getClass().getResource("/pictures/%d.png".formatted(model.getCurrentWrongs())).toExternalForm()));
         this.wordLabel.setText(model.getHiddenWord());
         if(attempPerWord==0){
             tryagainButton.setDisable(true);

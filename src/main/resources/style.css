@@ -8,11 +8,11 @@
     -fx-text-fill: white;
 }
 
-.button {
+.hover {
     -fx-font-weight: bolder;
     -fx-font-family: Arial, Helvetica, sans-serif;
 }
-.button:hover {
+.hover:hover {
     -fx-background-color: #4CAF50;
     -fx-text-fill: white;
     -fx-scale-x: 1.1;
@@ -35,29 +35,18 @@
     -fx-font-weight: bold;
   
 }
-.stageGrid {
-    -fx-padding: 10px;
-    -fx-hgap: 20px;
-    -fx-vgap: 20px;
-    -fx-pref-width: 30px;
-    -fx-pref-height: 30px;
-    -fx-font-size: 10px;
-    -fx-font-weight: bold;
-  
-}
+
 #backgroundButton {
     -fx-background-color: white;
     -fx-background-radius: 20;
     -fx-border-radius: 20;
-    -fx-border-color: black;
-    -fx-border-width: 2.5px;
+    
 }
 #textText {
-    -fx-wrap-text: true;
+    -fx-text-fill: rgb(255, 255, 255);
     -fx-padding: 5px 10px;
     
     -fx-font-weight: bold;
-    -fx-text-fill: red;
 }
 
 #diamondText {
