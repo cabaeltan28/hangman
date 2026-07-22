@@ -73,6 +73,8 @@ public class GameController {
     private Button hehe;
     @FXML
     private Label timerLabel;
+    @FXML 
+    private Button hintsButton;
     
     private Integer i=0;
     private Integer gold=0;
@@ -81,6 +83,7 @@ public class GameController {
     private Integer getRight=0;
     private Integer attempPerWord=0;
     private Integer diamond=50;
+    
         FoodRepository foodRepository = new FoodRepository();
         FruitsRepository fruitsRepository = new FruitsRepository();
         PlaceRepository placeRepository = new PlaceRepository();
@@ -90,16 +93,23 @@ public class GameController {
         Food foods = foodRepository.getRandomWord();
         Fruit fruit =  fruitsRepository.getRandomWord();
         Place places = placeRepository.getRandomPlace();
+        Animal newAnimal = animalRepository.getRandomWord();
+        Place newPlace = placeRepository.getRandomPlace();
+        Fruit newFruit = fruitsRepository.getRandomWord();
+        Food newFood = foodRepository.getRandomWord();
 
     private Timeline timer;
     private Integer timeLeft = 30;
     
     private String category;
+    private String newCategory;
+    private int timailhan=0;
     
     public void initialize() {
         generateKeyboard();
         setOnAction();
        setUpCategoryButtons();
+       
     }
     public void startNewGame(String word){
          if(timer != null){
@@ -121,24 +131,76 @@ public class GameController {
                 button.setDisable(true);
             }
         };
+        
         animal.setOnAction(event -> {
-            category = "ANIMAL";
-            hehe.setText(animals.getDefinition());
+            category = "ANIMALS";
+            hehe.setText(" ");
+            hintsBUTTON1();
             startNewGame(animals.getWord());
         });
         place.setOnAction(event -> {
-            category = "PLACE";
-            hehe.setText(places.getDefinition());
+            category = "PLACES";
+            hehe.setText(" ");
+            hintsBUTTON1();
             startNewGame(places.getWord());
         });
         fruits.setOnAction(event -> {
-            hehe.setText(fruit.getDefinition());
-            category = (fruit.getWord());
+            category = "FRUIT";
+            hehe.setText(" ");
+            hintsBUTTON1();
+            startNewGame(fruit.getWord());
         });
         food.setOnAction(event -> {
-            category = "FOOD";
-            hehe.setText(foods.getDefinition());
+            category = "FOODS";
+            hehe.setText(" ");
+            hintsBUTTON1();
             startNewGame(foods.getWord());
+        });
+    }
+    public void hintsBUTTON1(){
+         hintsButton.setOnAction(event -> {
+            gold-=10;
+            timailhan++;
+            scoreLabel.setText("Gold : "+gold.toString());
+            switch (category) {
+                case "ANIMALS":
+                    hehe.setText(animals.getDefinition());
+                    break;
+                case "PLACES":
+                    hehe.setText(places.getDefinition());
+                    break;
+                case "FRUIT":
+                    hehe.setText(fruit.getDefinition());
+                    break;
+                case "FOODS":
+                    break;
+                default:
+                    break;
+            }
+            hintsButton.setDisable(true);
+        });
+    }
+    public void hintsBUTTON2(){
+         hintsButton.setOnAction(event -> {
+            gold-=10;
+            timailhan++;
+            scoreLabel.setText("Gold : "+gold.toString());
+            switch (category) {
+                case "ANIMALS":
+                    hehe.setText(newAnimal.getDefinition());
+                    break;
+                case "PLACES":
+                    hehe.setText(newPlace.getDefinition());
+                    break;
+                case "FRUIT":
+                    hehe.setText(newFruit.getDefinition());
+                    break;
+                case "FOODS":
+                    hehe.setText(newFood.getDefinition());
+                    break;
+                default:
+                    break;
+            }
         });
     }
     public void nextword() {
@@ -147,24 +209,28 @@ public class GameController {
     }
     public void nextrepository(){
         switch (category) {
-            case "ANIMAL":
-            Animal newAnimal = animalRepository.getRandomWord();
-           
-            startNewGame(newAnimal.getWord());
+            case "ANIMALS":
+                hehe.setText(" ");
+                newAnimal = animalRepository.getRandomWord();
+                hintsBUTTON2();
+                startNewGame(newAnimal.getWord());
                 break;
-            case "PLACE":
-                Place newPlace = placeRepository.getRandomPlace();
-                hehe.setText(newPlace.getDefinition());
+            case "PLACES":
+                hehe.setText(" ");
+                newPlace = placeRepository.getRandomPlace();
+                hintsBUTTON2();
                 startNewGame(newPlace.getWord());
                 break;
-            case "FRUITS":
-                Fruit newFruit = fruitsRepository.getRandomWord();
-                hehe.setText(newFruit.getDefinition());
+            case "FRUIT":
+                hehe.setText(" ");
+                newFruit = fruitsRepository.getRandomWord();
+                hintsBUTTON2();
                 startNewGame(newFruit.getWord());
                 break;
-            case "FOOD":
-                Food newFood = foodRepository.getRandomWord();
-                hehe.setText(newFood.getDefinition());
+            case "FOODS":
+                hehe.setText(" ");
+                newFood = foodRepository.getRandomWord();
+                hintsBUTTON2();
                 startNewGame(newFood.getWord());
                 break;
         
@@ -185,8 +251,14 @@ public class GameController {
                 nextwordLabel.setDisable(false);
             } else {
                 nextwordLabel.setDisable(true);
+                scoreLabel.setText("Gold : 0");
             }
-              
+        if(gold<=0){
+                hintsButton.setDisable(true);
+            } else if(gold>0 && timailhan <=0){
+                hintsButton.setDisable(false);
+            }
+         
         if(model.isLose()){
             textText.setText("Game over! Better luck next time.");
             this.wordLabel.setText(wordToGuess);
@@ -202,15 +274,18 @@ public class GameController {
                 button.setDisable(true);
             }
           }
-         
+          timailhan=0;
           attempPerWord=0;
           getRight=0;
+          nextwordLabel.setDisable(true);
+          hintsButton.setDisable(true);
         }
         
         
         if(model.isWin()){
             textText.setText("You win! Congratulations bro!");
              getRight++;
+           j++;
            attemp++;
            if(model.isWin()){
             if(timer != null){
@@ -221,7 +296,10 @@ public class GameController {
           disabled(false);
          diamondText.setText("💎 :"+(diamond+=20));
           attempPerWord=0;
-            j++;
+          timailhan=0;
+           nextwordLabel.setDisable(true);
+          hintsButton.setDisable(true);
+           
         }
        
          this.streakLabel.setText("STREAK :"+getRight.toString());
@@ -242,7 +320,6 @@ public class GameController {
             gold +=10;
             this.scoreLabel.setText("GOLD :"+gold.toString());
         }
-        
         refreshUI();
 
     }
@@ -269,7 +346,10 @@ public class GameController {
     private void setOnAction(){
         
         tryagainButton.setOnAction(event -> {
+            hehe.setText(" ");
             nextrepository();
+            hintsBUTTON1();
+            hintsBUTTON2();
             if(attempPerWord>0){
                 if(gold==0){
                 gold=0;
@@ -285,9 +365,11 @@ public class GameController {
             model.resetGuessedLetter();
             this.wordLabel.setText(model.getHiddenWord());
             streakLabel.setText("STREAK :"+getRight.toString());
+            
         });
         
         nextwordLabel.setOnAction(event -> {
+            hehe.setText(" ");
              if(timer != null){
         timer.stop();
     }   startTimer();
@@ -299,6 +381,9 @@ public class GameController {
             scoreLabel.setText("GOLD :" + gold.toString());
             model.resetGuessedLetter();
             this.wordLabel.setText(model.getHiddenWord());
+            if(gold>0){
+                hintsButton.setDisable(false);
+            }
             nextword();
         });
     }
@@ -322,9 +407,9 @@ private void disabled(boolean enabled) {
 
             if(timeLeft <= 0){
                 timer.stop();
-                tryagainButton.setDisable(false);
+
                 textText.setText("Time Out!");
-                attemp++;
+
                 wordLabel.setText(wordToGuess);
 
                 for(Node node : keyBoardGrid.getChildren()){
