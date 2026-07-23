@@ -1,3 +1,9 @@
+.root{
+    -fx-background-image: url(blurbg.png);
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
 .label {
     -fx-text-fill: white;
 }
@@ -71,4 +77,15 @@
     -fx-font-size: 40px;          /* Makes the text larger */
     -fx-font-weight: bold;        /* Makes the text bold */
     -fx-text-fill: white;  
+}
+#woods {
+    -fx-background-image: url(woodtitle.png);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+    -fx-padding: 0;
 }

@@ -60,6 +60,7 @@
             <Font size="55.0" />
          </font>
       </Label>
+            <Button fx:id="woods" layoutX="509.0" layoutY="-27.0" mnemonicParsing="false" prefHeight="143.0" prefWidth="456.0" />
       <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="598.0" layoutY="19.0" text="Hangman Game">
          <font>
             <Font name="Britannic Bold" size="47.0" />
