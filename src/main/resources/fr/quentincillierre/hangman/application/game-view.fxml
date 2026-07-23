@@ -105,7 +105,7 @@
       <Label fx:id="timerLabel" layoutX="1187.0" layoutY="45.0" prefHeight="17.0" prefWidth="60.0" styleClass="hover" text="Timer: " />
       <Button fx:id="hehe" layoutX="1181.0" layoutY="255.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="181.0" styleClass="hover" wrapText="true" />
             <Button fx:id="wordLabel" layoutX="859.0" layoutY="337.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="262.0" text="________" />
-      <ImageView fx:id="imageView" fitHeight="432.0" fitWidth="547.0" layoutX="391.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imageView" fitHeight="349.0" fitWidth="456.0" layoutX="420.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
 
