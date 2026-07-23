@@ -374,13 +374,11 @@ public class GameController {
             hintsBUTTON1();
             hintsBUTTON2();
             if(attempPerWord>0){
-                if(gold<0){
-                gold=0;
-                } else {
-                    gold -=10;
-                }
                 attemp++;
                 getRight=0;
+            }
+            if(gold>=10){
+                hintsButton.setDisable(false);
             }
             textText.setText(" ");
             model.reset();
@@ -397,6 +395,9 @@ public class GameController {
             if(timer != null){
         timer.stop();
     }   startTimer();
+            if(gold>=10){
+                hintsButton.setDisable(false);
+            }
             disabled(false);
             textText.setText(" ");
             this.gold -=10;
