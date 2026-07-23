@@ -89,12 +89,14 @@
             <Font size="24.0" />
          </font>
       </TextField>
+            <Button fx:id="definition" layoutX="1196.0" layoutY="161.0" mnemonicParsing="false" prefHeight="250.0" prefWidth="270.0" />
       <Button fx:id="nextwordLabel" layoutX="844.0" layoutY="685.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="99.0" styleClass="hover" text="Try Again" />
       <Text fx:id="textText" layoutX="374.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="788.0">
          <font>
             <Font size="36.0" />
          </font>
       </Text>
+<<<<<<< HEAD
             <Button fx:id="gamelevel" layoutX="106.0" layoutY="214.0" mnemonicParsing="false" prefHeight="316.0" prefWidth="262.0" />
       <Button fx:id="animal" layoutX="156.0" layoutY="267.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="162.0" styleClass="hover" text="Easy" />
       <Button fx:id="streakLabel" layoutX="693.0" layoutY="79.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="90.0" styleClass="hover" text="STREAK : 0" />
@@ -102,11 +104,20 @@
       <Button fx:id="fruits" layoutX="156.0" layoutY="387.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="162.0" styleClass="hover" text="Difficult" />
       <Button fx:id="food" layoutX="156.0" layoutY="452.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="162.0" styleClass="hover" text="Bonus" />
       <Button layoutX="140.0" layoutY="185.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="194.0" styleClass="hover" text="Category" />
+=======
+            <Button fx:id="gamelevel" layoutX="130.0" layoutY="209.0" mnemonicParsing="false" prefHeight="281.0" prefWidth="232.0" />
+      <Button fx:id="animal" layoutX="157.0" layoutY="238.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="200.0" text="Easy" />
+      <Button fx:id="streakLabel" layoutX="693.0" layoutY="79.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="90.0" styleClass="hover" text="STREAK : 0" />
+      <Button fx:id="place" layoutX="176.0" layoutY="333.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="162.0" styleClass="hover" text="Moderate" />
+      <Button fx:id="fruits" layoutX="176.0" layoutY="372.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="162.0" styleClass="hover" text="Difficult" />
+      <Button fx:id="food" layoutX="176.0" layoutY="411.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="162.0" styleClass="hover" text="Bonus" />
+      <Button layoutX="175.0" layoutY="180.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="162.0" styleClass="hover" text="Category" />
+>>>>>>> 0f9030e946765ffd212864c2453902886831dc9a
       <Button layoutX="1178.0" layoutY="34.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="79.0" styleClass="hover" />
-      <Button fx:id="hintsButton" layoutX="1201.0" layoutY="387.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="141.0" styleClass="hover" text="HINTS for 10 gold" />
+      <Button fx:id="hintsButton" layoutX="1257.0" layoutY="466.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="141.0" styleClass="hover" text="HINTS for 10 gold" />
       <Label fx:id="timerLabel" layoutX="1187.0" layoutY="45.0" prefHeight="17.0" prefWidth="60.0" styleClass="hover" text="Timer: " />
-      <Button fx:id="hehe" layoutX="1181.0" layoutY="255.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="181.0" styleClass="hover" wrapText="true" />
-            <Button fx:id="wordLabel" layoutX="859.0" layoutY="337.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="262.0" text="________" />
+      <Button fx:id="hehe" layoutX="1230.0" layoutY="185.0" mnemonicParsing="false" prefHeight="193.0" prefWidth="222.0" styleClass="hover" wrapText="true" />
+            <Button fx:id="wordLabel" layoutX="865.0" layoutY="337.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="256.0" text="________" wrapText="true" />
       <ImageView fx:id="imageView" fitHeight="349.0" fitWidth="456.0" layoutX="420.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
