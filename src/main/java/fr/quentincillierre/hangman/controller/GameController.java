@@ -36,7 +36,7 @@ public class GameController {
     private HangmanModel model;
     
     @FXML
-    private Label wordLabel;
+    private Button wordLabel;
 
     @FXML
     private Label resultLabel;

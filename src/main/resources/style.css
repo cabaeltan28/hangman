@@ -37,13 +37,19 @@
 }
 
 #backgroundButton {
-    -fx-background-color: white;
-    -fx-background-radius: 20;
-    -fx-border-radius: 20;
+    -fx-background-image: url("paper.png");
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+    -fx-padding: 0;
     
 }
 #textText {
-    -fx-text-fill: rgb(255, 255, 255);
+     -fx-fill: white;
     -fx-padding: 5px 10px;
     
     -fx-font-weight: bold;
@@ -65,4 +71,10 @@
     -fx-font-size: 12px;
     -fx-font-weight: bold;
     -fx-text-fill: rgb(0, 0, 0);
+}
+#wordLabel{
+    -fx-background-color: rgba(177, 113, 88, 0.548);
+    -fx-font-size: 40px;          /* Makes the text larger */
+    -fx-font-weight: bold;        /* Makes the text bold */
+    -fx-text-fill: white;  
 }
