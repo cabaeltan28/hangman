@@ -99,7 +99,8 @@ public class GameController {
         Food newFood = foodRepository.getRandomWord();
 
     private Timeline timer;
-    private Integer timeLeft = 30;
+    private Integer timeLeft = 0;
+    private Integer currentTime=0;
     
     private String category;
     private String newCategory;
@@ -136,32 +137,44 @@ public class GameController {
             category = "ANIMALS";
             hehe.setText(" ");
             hintsBUTTON1();
+            currentTime=60;
+            timeLeft = currentTime;
             startNewGame(animals.getWord());
         });
         place.setOnAction(event -> {
             category = "PLACES";
             hehe.setText(" ");
             hintsBUTTON1();
+            currentTime= 45;
+            timeLeft = currentTime;
             startNewGame(places.getWord());
         });
         fruits.setOnAction(event -> {
             category = "FRUIT";
             hehe.setText(" ");
             hintsBUTTON1();
+            currentTime= 30;
+            timeLeft = currentTime;
             startNewGame(fruit.getWord());
         });
         food.setOnAction(event -> {
             category = "FOODS";
             hehe.setText(" ");
             hintsBUTTON1();
+            currentTime= 20;
+            timeLeft = currentTime;
             startNewGame(foods.getWord());
         });
+        hintsButton.setDisable(true);
+        nextwordLabel.setDisable(true);
+        tryagainButton.setDisable(true);
     }
     public void hintsBUTTON1(){
          hintsButton.setOnAction(event -> {
             gold-=10;
             timailhan++;
             scoreLabel.setText("Gold : "+gold.toString());
+            hintsButton.setDisable(true);
             switch (category) {
                 case "ANIMALS":
                     hehe.setText(animals.getDefinition());
@@ -177,14 +190,16 @@ public class GameController {
                 default:
                     break;
             }
-            hintsButton.setDisable(true);
+            
         });
     }
     public void hintsBUTTON2(){
          hintsButton.setOnAction(event -> {
+           
             gold-=10;
             timailhan++;
             scoreLabel.setText("Gold : "+gold.toString());
+            hintsButton.setDisable(true);
             switch (category) {
                 case "ANIMALS":
                     hehe.setText(newAnimal.getDefinition());
@@ -213,24 +228,32 @@ public class GameController {
                 hehe.setText(" ");
                 newAnimal = animalRepository.getRandomWord();
                 hintsBUTTON2();
+                currentTime= 60;
+            timeLeft = currentTime;
                 startNewGame(newAnimal.getWord());
                 break;
             case "PLACES":
                 hehe.setText(" ");
                 newPlace = placeRepository.getRandomPlace();
                 hintsBUTTON2();
+                currentTime= 45;
+            timeLeft = currentTime;
                 startNewGame(newPlace.getWord());
                 break;
             case "FRUIT":
                 hehe.setText(" ");
                 newFruit = fruitsRepository.getRandomWord();
                 hintsBUTTON2();
+                currentTime= 30;
+            timeLeft = currentTime;
                 startNewGame(newFruit.getWord());
                 break;
             case "FOODS":
                 hehe.setText(" ");
                 newFood = foodRepository.getRandomWord();
                 hintsBUTTON2();
+                currentTime= 20;
+            timeLeft = currentTime;
                 startNewGame(newFood.getWord());
                 break;
         
@@ -351,7 +374,7 @@ public class GameController {
             hintsBUTTON1();
             hintsBUTTON2();
             if(attempPerWord>0){
-                if(gold==0){
+                if(gold<0){
                 gold=0;
                 } else {
                     gold -=10;
@@ -370,7 +393,8 @@ public class GameController {
         
         nextwordLabel.setOnAction(event -> {
             hehe.setText(" ");
-             if(timer != null){
+            timeLeft=currentTime;
+            if(timer != null){
         timer.stop();
     }   startTimer();
             disabled(false);
@@ -396,7 +420,7 @@ private void disabled(boolean enabled) {
 }
     private void startTimer() {
 
-    timeLeft = 30;
+    
 
     timer = new Timeline(
         new KeyFrame(Duration.seconds(1), event -> {

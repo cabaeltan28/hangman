@@ -21,6 +21,9 @@ public class HangmanModel {
         this.wordToGuess=wordToGuess.toUpperCase();
         this.maxWrongs=10;
         this.score=0;  
+        this.guessedLetter.add('-');
+        this.guessedLetter.add(' ');
+
     }
   
     public void reset(){
