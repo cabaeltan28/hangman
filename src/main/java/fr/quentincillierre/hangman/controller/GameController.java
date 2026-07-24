@@ -60,7 +60,7 @@ public class GameController {
     private Text textText;
 
     @FXML
-    private TextField diamondText;
+    private Text diamondText;
     @FXML
     private Button animal;
     @FXML
@@ -317,7 +317,7 @@ public class GameController {
              textText.setText("You Win");
             }
           disabled(false);
-         diamondText.setText("💎 :"+(diamond+=20));
+         diamondText.setText(""+(diamond+=20));
           attempPerWord=0;
           timailhan=0;
            nextwordLabel.setDisable(true);

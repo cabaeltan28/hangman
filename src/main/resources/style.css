@@ -12,15 +12,9 @@
     -fx-font-weight: bolder;
     -fx-font-family: Arial, Helvetica, sans-serif;
 }
-.hover:hover {
-    -fx-background-color: #4CAF50;
-    -fx-text-fill: white;
-    -fx-scale-x: 1.1;
-    -fx-scale-y: 1.1;
-}
+
 
 #nextwordLabel:hover {
-    -fx-background-color: #4CAF50;
     -fx-text-fill: white;
     -fx-scale-x: 1.1;
     -fx-scale-y: 1.1;
@@ -55,28 +49,34 @@
     -fx-font-weight: bold;
 }
 
-#diamondText {
-    -fx-font-size: 20px;
+
+#diamond{
+    -fx-background-image: url(diamond.png);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-font-weight: bolder;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+    -fx-padding: 0;
+}
+#diamondText{
+    -fx-fill: white;
     -fx-font-weight: bolder;
     -fx-font-family: Arial, Helvetica, sans-serif;
-    -fx-background-color: antiquewhite;
 }
-#diamondText:hover{
-    -fx-background-color: #4CAF50;
-    -fx-text-fill: white;
-    -fx-scale-x: 1.1;
-    -fx-scale-y: 1.1;
-}
+
 #timerLabel {
     -fx-font-size: 12px;
     -fx-font-weight: bold;
     -fx-text-fill: rgb(0, 0, 0);
 }
 #wordLabel{
-    -fx-background-color: rgba(177, 113, 88, 0.548);
+    -fx-background-color: transparent;
     -fx-font-size: 40px;          /* Makes the text larger */
     -fx-font-weight: bold;        /* Makes the text bold */
-    -fx-text-fill: white;  
+    -fx-text-fill: black;  
 }
 #woods {
     -fx-background-image: url(woodtitle.png);
@@ -101,13 +101,13 @@
 
     -fx-padding: 0;
 }
+
 #hehe {
-    
+    -fx-background-color: transparent;
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center center;
     -fx-text-fill: white;
-    -fx-font-size: 12px;
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 
@@ -118,11 +118,14 @@
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center center;
-
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 
     -fx-padding: 0;
+}
+#definition:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
 }
 
 #animal {
@@ -130,7 +133,7 @@
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center center;
-
+    -fx-font-weight: bolder;
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 
@@ -142,7 +145,7 @@
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center center;
-
+    -fx-font-weight: bolder;
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 
@@ -155,7 +158,7 @@
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center center;
-
+    -fx-font-weight: bolder;
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 
@@ -168,7 +171,7 @@
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center center;
-
+    -fx-font-weight: bolder;
     -fx-background-color: transparent;
     -fx-border-color: transparent;
 
@@ -181,6 +184,24 @@
     -fx-background-size: 100% 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center center;
+    -fx-font-weight: bolder;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+    -fx-padding: 0;
+}
+.hovers:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+}
+
+
+#scoreLabel {
+    -fx-background-image: url(gold.png);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-fill: white;
 
     -fx-background-color: transparent;
     -fx-border-color: transparent;
@@ -189,3 +210,69 @@
 }
 
 
+#streakLabel {
+    -fx-background-image: url(streak.png);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+    -fx-fill: white;
+
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+    -fx-padding: 0;
+
+}
+
+
+#highScoreLabel {
+    -fx-background-image: url(status.png);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+    -fx-padding: 0;
+    -fx-fill: white;
+}
+
+
+#tryagainButton {
+    -fx-background-image: url(nextword.png);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+    -fx-padding: 0;
+}
+
+
+#nextwordLabel {
+    -fx-background-image: url(tryagain.png);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+    -fx-padding: 0;
+}
+
+
+#hintsButton {
+    -fx-background-image: url(hints.png);
+    -fx-background-size: 100% 100%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+    -fx-padding: 0;
+}

@@ -2,7 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -31,8 +30,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1536.0">
    <children>
-      <Button fx:id="backgroundButton" layoutX="372.0" layoutY="161.0" mnemonicParsing="false" prefHeight="488.0" prefWidth="788.0" />
-      <GridPane fx:id="keyBoardGrid" alignment="CENTER" layoutX="433.0" layoutY="810.0" prefHeight="90.0" prefWidth="754.0" styleClass="grid-pane">
+      <Button fx:id="backgroundButton" layoutX="407.0" layoutY="322.0" mnemonicParsing="false" prefHeight="372.0" prefWidth="669.0" />
+      <GridPane fx:id="keyBoardGrid" alignment="CENTER" layoutX="441.0" layoutY="729.0" prefHeight="90.0" prefWidth="754.0" styleClass="grid-pane">
         <columnConstraints>
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -60,14 +59,15 @@
             <Font size="55.0" />
          </font>
       </Label>
-            <Button fx:id="woods" layoutX="509.0" layoutY="-27.0" mnemonicParsing="false" prefHeight="143.0" prefWidth="456.0" />
-      <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="598.0" layoutY="19.0" text="Hangman Game">
+            <Button fx:id="woods" layoutX="508.0" layoutY="65.0" mnemonicParsing="false" prefHeight="176.0" prefWidth="467.0" />
+      <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="586.0" layoutY="129.0" text="Hangman Game">
          <font>
             <Font name="Britannic Bold" size="47.0" />
          </font>
       </Label>
-      <Button fx:id="tryagainButton" layoutX="582.0" layoutY="685.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="99.0" styleClass="hover" text="Nextword" />
-      <GridPane fx:id="stageGrid" layoutX="696.0" layoutY="134.0" prefHeight="193.0" prefWidth="90.0" styleClass="stageGrid">
+      <Button fx:id="tryagainButton" layoutX="536.0" layoutY="639.0" mnemonicParsing="false" prefHeight="123.0" prefWidth="186.0" styleClass="hover" />
+            <Button fx:id="diamond" layoutX="106.0" layoutY="76.0" mnemonicParsing="false" prefHeight="176.0" prefWidth="278.0" />
+      <GridPane fx:id="stageGrid" layoutX="396.0" layoutY="33.0" prefHeight="193.0" prefWidth="90.0" styleClass="stageGrid">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -82,32 +82,33 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
       </GridPane>
-      <Button fx:id="scoreLabel" layoutX="579.0" layoutY="79.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="87.0" styleClass="hover" text="GOLD : 0" />
-      <Button fx:id="highScoreLabel" layoutX="817.0" layoutY="79.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="117.0" styleClass="hover" text="PERCENTAGE: 0/0" />
-      <TextField fx:id="diamondText" layoutX="237.0" layoutY="28.0" prefHeight="51.0" prefWidth="117.0" text="💎 : 50">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </TextField>
-      <Button fx:id="nextwordLabel" layoutX="844.0" layoutY="685.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="99.0" styleClass="hover" text="Try Again" />
-      <Text fx:id="textText" layoutX="374.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="788.0">
+      <Button fx:id="scoreLabel" layoutX="415.0" layoutY="198.0" mnemonicParsing="false" prefHeight="133.0" prefWidth="199.0" styleClass="hover" text="0" />
+      <Button fx:id="highScoreLabel" layoutX="874.0" layoutY="198.0" mnemonicParsing="false" prefHeight="133.0" prefWidth="209.0" styleClass="hover" text=" 0/0" />
+      <Button fx:id="nextwordLabel" layoutX="768.0" layoutY="639.0" mnemonicParsing="false" prefHeight="123.0" prefWidth="178.0" styleClass="hover" />
+      <Text fx:id="textText" layoutX="376.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="748.0">
          <font>
             <Font size="36.0" />
          </font>
       </Text>
-            <Button fx:id="gamelevel" layoutX="106.0" layoutY="214.0" mnemonicParsing="false" prefHeight="364.0" prefWidth="262.0" />
-      <Button fx:id="animal" layoutX="156.0" layoutY="255.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="162.0" styleClass="hover" text="Easy" />
-      <Button fx:id="streakLabel" layoutX="693.0" layoutY="79.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="90.0" styleClass="hover" text="STREAK : 0" />
-      <Button fx:id="place" layoutX="156.0" layoutY="323.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="162.0" styleClass="hover" text="Moderate" />
-      <Button fx:id="fruits" layoutX="156.0" layoutY="387.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="162.0" styleClass="hover" text="Difficult" />
-      <Button fx:id="food" layoutX="156.0" layoutY="487.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="181.0" styleClass="hover" text="Bonus" />
-      <Button layoutX="1178.0" layoutY="34.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="79.0" styleClass="hover" />
-      <Button fx:id="hintsButton" layoutX="1201.0" layoutY="387.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="141.0" styleClass="hover" text="HINTS for 10 gold" />
-      <Label fx:id="timerLabel" layoutX="1187.0" layoutY="45.0" prefHeight="17.0" prefWidth="60.0" styleClass="hover" text="Timer: " />
-      <Button fx:id="hehe" layoutX="1181.0" layoutY="255.0" mnemonicParsing="false" prefHeight="101.0" prefWidth="181.0" styleClass="hover" wrapText="true" />
-            <Button fx:id="wordLabel" layoutX="859.0" layoutY="337.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="262.0" text="________" />
-      <ImageView fx:id="imageView" fitHeight="349.0" fitWidth="456.0" layoutX="420.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true" />
-            <Label fx:id="category" layoutX="106.0" layoutY="161.0" prefHeight="143.0" prefWidth="262.0" />
+            <Button fx:id="gamelevel" layoutX="106.0" layoutY="264.0" mnemonicParsing="false" prefHeight="335.0" prefWidth="262.0" />
+      <Button fx:id="animal" layoutX="156.0" layoutY="322.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="162.0" styleClass="hovers" text="Easy" />
+      <Button fx:id="streakLabel" layoutX="637.0" layoutY="198.0" mnemonicParsing="false" prefHeight="133.0" prefWidth="209.0" styleClass="hover" text="0" />
+      <Button fx:id="place" layoutX="156.0" layoutY="386.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="162.0" styleClass="hovers" text="         Moderate" />
+      <Button fx:id="fruits" layoutX="156.0" layoutY="451.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="162.0" styleClass="hovers" text="         Difficult" />
+      <Button fx:id="food" layoutX="156.0" layoutY="512.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="162.0" styleClass="hovers" text="Bonus" />
+            <Button fx:id="definition" layoutX="1151.0" layoutY="243.0" mnemonicParsing="false" prefHeight="353.0" prefWidth="262.0" />
+      <Button fx:id="timer" layoutX="1351.0" layoutY="125.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="79.0" styleClass="hover" />
+      <Button fx:id="hintsButton" layoutX="1144.0" layoutY="613.0" mnemonicParsing="false" prefHeight="176.0" prefWidth="278.0" styleClass="hover" />
+      <Label fx:id="timerLabel" layoutX="1361.0" layoutY="137.0" prefHeight="17.0" prefWidth="60.0" styleClass="hover" text="Timer: " />
+      <Button fx:id="hehe" layoutX="1183.0" layoutY="283.0" mnemonicParsing="false" prefHeight="276.0" prefWidth="199.0" wrapText="true" />
+            <Button fx:id="wordLabel" layoutX="768.0" layoutY="460.0" mnemonicParsing="false" prefHeight="67.0" prefWidth="377.0" text="________" />
+      <ImageView fx:id="imageView" fitHeight="316.0" fitWidth="409.0" layoutX="424.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="category" layoutX="106.0" layoutY="212.0" prefHeight="143.0" prefWidth="262.0" />
+            <Text fx:id="diamondText" fill="WHITE" layoutX="237.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" wrappingWidth="79.0">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Text>
    </children>
 </AnchorPane>
 
