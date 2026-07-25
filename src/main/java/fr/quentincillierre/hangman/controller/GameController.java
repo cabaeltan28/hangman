@@ -430,15 +430,32 @@ private void disabled(boolean enabled) {
 
             timeLeft--;
 
-            timerLabel.setText("Time: " + timeLeft);
+            timerLabel.setText("" + timeLeft);
 
             if(timeLeft <= 0){
                 timer.stop();
 
                 textText.setText("Time Out!");
-
+                 this.wordLabel.setText(wordToGuess);
+            i=0;
+            this.streakLabel.setText("0");
+            
+            attemp++;
+             if(timer != null){
+            timer.stop();
+            }
+            for(Node node: keyBoardGrid.getChildren()){
+            if(node instanceof Button button){
+                button.setDisable(true);
+            }
+          }
+          timailhan=0;
+          attempPerWord=0;
+          getRight=0;
+          nextwordLabel.setDisable(true);
+          hintsButton.setDisable(true);
                 wordLabel.setText(wordToGuess);
-
+                tryagainButton.setDisable(false);
                 for(Node node : keyBoardGrid.getChildren()){
                     if(node instanceof Button button){
                         button.setDisable(true);

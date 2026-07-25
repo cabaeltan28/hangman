@@ -104,7 +104,7 @@
 }
 
 #timerLabel {
-    -fx-font-size: 12px;
+    -fx-font-size: 20px;
     -fx-font-weight: bold;
     -fx-text-fill: white;
 }
