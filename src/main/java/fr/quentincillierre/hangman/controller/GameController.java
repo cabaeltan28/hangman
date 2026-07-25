@@ -12,6 +12,7 @@ import fr.quentincillierre.hangman.model.PlaceRepository;
 import fr.quentincillierre.hangman.model.WordRepository;
 import javafx.fxml.FXML;
 import javafx.scene.layout.GridPane;
+import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
@@ -353,12 +354,13 @@ public class GameController {
        for(int i=0; i<26; i++){
         char letter = (char) ('A'+ i);
         Button button = new Button(String.valueOf(letter));
-        
+       
+button.setPrefSize(75, 60);
         button.setOnAction(event -> {
             handleKeyboardInput(button.getText());
             button.setDisable(true);
         } );
-        
+
         int col = i%columns;
         int row = i/columns;
         keyBoardGrid.add(button,col,row);
