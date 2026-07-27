@@ -24,6 +24,9 @@ import javafx.scene.image.ImageView;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.util.Duration;
+import javafx.application.Platform;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.layout.AnchorPane;
 
 
 public class GameController {
@@ -76,6 +79,8 @@ public class GameController {
     private Label timerLabel;
     @FXML 
     private Button hintsButton;
+    @FXML
+    private AnchorPane rootPane;
     
     private Integer i=0;
     private Integer gold=0;
@@ -111,6 +116,10 @@ public class GameController {
         generateKeyboard();
         setOnAction();
        setUpCategoryButtons();
+       Platform.runLater(() -> {
+        rootPane.requestFocus();
+        rootPane.setOnKeyPressed(this::handlePhysicalKeyboard);
+    });
        
     }
     public void startNewGame(String word){
@@ -467,6 +476,25 @@ private void disabled(boolean enabled) {
 
     timer.setCycleCount(Timeline.INDEFINITE);
     timer.play();
+}
+private void handlePhysicalKeyboard(KeyEvent event) {
+
+    String key = event.getText().toUpperCase();
+
+    if (!key.matches("[A-Z]")) {
+        return;
+    }
+
+    for (Node node : keyBoardGrid.getChildren()) {
+
+        if (node instanceof Button button &&
+            button.getText().equals(key) &&
+            !button.isDisable()) {
+
+            button.fire();   // Simulates clicking the on-screen button
+            break;
+        }
+    }
 }
 
 }

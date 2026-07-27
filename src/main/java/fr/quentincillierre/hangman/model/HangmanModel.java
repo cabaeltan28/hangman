@@ -80,7 +80,7 @@ public class HangmanModel {
             if(guessedLetter.contains(this.wordToGuess.charAt(i))){
                 stringBuilder.append(this.wordToGuess.charAt(i));
             }else{
-                stringBuilder.append("_");
+                stringBuilder.append("_ ");
             }
         }
         return stringBuilder.toString().trim();
